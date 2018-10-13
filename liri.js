@@ -4,11 +4,11 @@ require("dotenv").config();
 ==============================================================*/
 //Packages and Modules
 var fs = require('fs');
-var spotify = require('spotify');
-//var spotify = new Spotify(keys.spotify);
-//var twitter = require('twitter');
 var keys = require('./keys');
-//let moment = require('moment');
+var Spotify = require('node-spotify-api');
+var spotify = new Spotify(keys.spotify);
+//var twitter = require('twitter');
+let moment = require('moment');
 var request = require('request');
 const chalk = require('chalk');
 
@@ -73,6 +73,8 @@ function bandsInTownAPI() {
             let bandName = JSON.parse(body);
 
            for(let i=0; i<3; i++){
+            //    console.log(bandName);
+            // console.count('band')
             console.log(bandName[i].venue.name);
             console.log("Location: " + bandName[i].venue.city);
             console.log(moment(bandName[i].datetime).format("MM/DD/YY"));
@@ -96,7 +98,7 @@ function spotifyMe (){
   });
   spotify.search({type:'track', query: "Thiriller"}, function(err,data){
       if(!err){
-          dispalySpotify(data);
+          displaySpotify(data);
         }
         else{
             throw err;
@@ -104,12 +106,14 @@ function spotifyMe (){
     });
 }
 function displaySpotify(data){
-    var artists = data.tracks.items[1].artists[0].name;             //['tracks']['items'][1]['artists'][0]['name'];
-    var album = data.tracks.items[1].artists[0].name;               //['tracks']['items'][1]['album']['name'];
-    var songPreview = data.tracks.items[1].externam_urls.spotify;   //['tracks']['items'][1]['external_urls']['spotify'];
-    var track = data.tracks.items[1].name;                          //['tracks']['items'][1]['name'];
+    // console.log(data);
+    // console.log('keys!',data.tracks.items[0]);
+    var artists = data.tracks.items[0].artists[0].name;             //['tracks']['items'][1]['artists'][0]['name'];
+    var album = data.tracks.items[0].artists[0].name;               //['tracks']['items'][1]['album']['name'];
+    var songPreview = data.tracks.items[0].external_urls.spotify;   //['tracks']['items'][1]['external_urls']['spotify'];
+    var track = data.tracks.items[0].name;                          //['tracks']['items'][1]['name'];
     //Testing
-    // console.log(JSON.stringify(data['tracks']['items'][1]['name'] ,null, 1));
+    console.log(JSON.stringify(data['tracks']['items'][1]['name'] ,null, 1));
     console.log('Artist: ' + artists);
     console.log('Track: ' + track);
     console.log('Album ' + album);
