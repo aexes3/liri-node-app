@@ -65,7 +65,7 @@ function omdbAPI() {
 
 ///////////////// B A N D S ////////////////////
 function bandsInTownAPI() {
-    var artist = process.argv.splice(3);
+    var artist = process.argv[3];
     var queryUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
     request(queryUrl, (err, response, body) => {
@@ -73,10 +73,11 @@ function bandsInTownAPI() {
             return err;
 
         if (!err && response.statusCode === 200) {
-            var artist = JSON.parse(body);
+            var bandChoice = JSON.parse(body);
 
             console.log(artist);
-            console.log(body);
+            console.log("Michael Jackson");
+            console.log(response.statusCode === 200);
         }
     })
 }
@@ -87,6 +88,14 @@ function spotifyMe (){
     if (!track){
         track = "Thriller"
     }
+    spotify.search({type:'track', query: "Thiriller"}, function(err,data){
+        if(!err){
+            dispalySpotify();
+        }
+        else{
+            throw err;
+        }
+    });
     
 }
 
