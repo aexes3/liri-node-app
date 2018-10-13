@@ -4,7 +4,7 @@ require("dotenv").config();
 ==============================================================*/
 //Packages and Modules
 var fs = require('fs');
-var spotify = require('node-spotify-api');
+var spotify = require('spotify');
 //var spotify = new Spotify(keys.spotify);
 //var twitter = require('twitter');
 var keys = require('./keys');
@@ -65,15 +65,18 @@ function omdbAPI() {
 
 ///////////////// B A N D S ////////////////////
 function bandsInTownAPI() {
-    let bandName = process.argv.splice(3);
-    var queryUrl = "https://rest.bandsintown.com/artists/" + bandName + "/events?app_id=codingbootcamp";
+    let artist = process.argv.splice(3);
+    var queryUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
     request(queryUrl, (err, response, body) => {
         if (!err && response.statusCode === 200) {
             let bandName = JSON.parse(body);
 
-            console.log(bandName);
-           console.log(body);
+           for(let i=0; i<3; i++){
+            console.log(bandName[i].venue.name);
+            console.log("Location: " + bandName[i].venue.city);
+            console.log(moment(bandName[i].datetime).format("MM/DD/YY"));
+            }
         }
     })
 }
@@ -101,10 +104,10 @@ function spotifyMe (){
     });
 }
 function displaySpotify(data){
-    var artists = data.tracks//.items[1].artists[0].name;             //['tracks']['items'][1]['artists'][0]['name'];
-    var album = data.tracks//.items[1].artists[0].name;               //['tracks']['items'][1]['album']['name'];
-    var songPreview = data.tracks//.items[1].externam_urls.spotify;   //['tracks']['items'][1]['external_urls']['spotify'];
-    var track = data.tracks//.items[1].name;                          //['tracks']['items'][1]['name'];
+    var artists = data.tracks.items[1].artists[0].name;             //['tracks']['items'][1]['artists'][0]['name'];
+    var album = data.tracks.items[1].artists[0].name;               //['tracks']['items'][1]['album']['name'];
+    var songPreview = data.tracks.items[1].externam_urls.spotify;   //['tracks']['items'][1]['external_urls']['spotify'];
+    var track = data.tracks.items[1].name;                          //['tracks']['items'][1]['name'];
     //Testing
     // console.log(JSON.stringify(data['tracks']['items'][1]['name'] ,null, 1));
     console.log('Artist: ' + artists);
