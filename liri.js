@@ -63,6 +63,7 @@ function omdbAPI() {
        `);
 
             console.log(movieData);
+            logMeIn(movieData);
         };
         if (err) {
             console.log("Are you sure that's the right movie?!")
@@ -97,6 +98,7 @@ function bandsInTownAPI() {
             `);
 
                 console.log(concert);
+                logMeIn(concert);
             }
         }
         if (err) {
@@ -114,7 +116,7 @@ function spotifyMe() {
         //why does this spotify package only accept track, not artist or album?
      spotify.search({ type: "track", query: tuneQuery}, (err, data) => {
         if (err) {
-           console.log("SYup, I knew something like this would happen: " + err);
+           console.log("Figures, I knew something like this would happen: " + err);
            return;
         }
         else {
@@ -126,6 +128,7 @@ function spotifyMe() {
             `);
     
             console.log(songInfo);
+            logMeIn(songInfo);
         }
    }) 
 };
@@ -173,6 +176,14 @@ function doThis(){
     })
 }
 
+///////////////////L O G  M E  I N /////////////////
 
+function logMeIn(logit){
+    fs.appendFile("log.txt", logit, (err) =>{
+        if(err){
+            return console.log(err);
+        }
+    });
+}
 
 liriMeThis();

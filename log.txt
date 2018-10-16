@@ -1,0 +1,50 @@
+
+            [33mArtist: Michael Jackson[39m
+            [32mSong Title: thriller[39m
+            [33mAlbum: Thriller 25 Super Deluxe Edition[39m
+            [33mSpotify This Song: https://open.spotify.com/album/1C2h7mLntPSeVYciMRTF4a[39m
+            
+            [33mArtist: Michael Jackson[39m
+            [32mSong Title: Thriller[39m
+            [33mAlbum: Thriller 25 Super Deluxe Edition[39m
+            [33mSpotify This Song: https://open.spotify.com/album/1C2h7mLntPSeVYciMRTF4a[39m
+            
+            [33mArtist: Michael Jackson[39m
+            [32mSong Title: Thriller[39m
+            [33mAlbum: Thriller 25 Super Deluxe Edition[39m
+            [33mSpotify This Song: https://open.spotify.com/album/1C2h7mLntPSeVYciMRTF4a[39m
+            
+       [32mMovie Title: Ghostbusters[39m
+       [33mYear: 1984[39m
+       [33mRated: PG[39m
+       [33mIMDB Rating: 7.8[39m
+       [33mRotten Tomato Rating: 97%[39m
+       [33mCountry: USA[39m
+       [33mLanguages: English[39m
+       [33mPlot: Three former parapsychology professors set up shop as a unique ghost removal service.[39m
+       [33mActors: Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis[39m
+       
+            [32mArtist: metallica[39m
+            [33mVenue: Fiserv Forum[39m
+            [33mLocation: Milwaukee, WI[39m
+            [33mDate: 10/16/18[39m
+            
+==========================================
+
+            
+            [32mArtist: metallica[39m
+            [33mVenue: PPG Paints Arena[39m
+            [33mLocation: Pittsburgh, PA[39m
+            [33mDate: 10/18/18[39m
+            
+==========================================
+
+            
+            [32mArtist: metallica[39m
+            [33mVenue: Bryce Jordan Center[39m
+            [33mLocation: University Park, PA[39m
+            [33mDate: 10/20/18[39m
+            
+==========================================
+
+            
