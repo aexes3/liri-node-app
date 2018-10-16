@@ -48,3 +48,101 @@
 ==========================================
 
             
+            [32mArtist: justice[39m
+            [33mVenue: Austin City Limits Music Festival[39m
+            [33mLocation: Austin, TX[39m
+            [33mDate: 10/13/18[39m
+            
+==========================================
+
+            
+            [32mArtist: justice[39m
+            [33mVenue: HARD Day of the Dead[39m
+            [33mLocation: Los Angeles, CA[39m
+            [33mDate: 11/03/18[39m
+            
+==========================================
+
+            
+            [32mArtist: justice[39m
+            [33mVenue: Belly Up Aspen (DJ Set)[39m
+            [33mLocation: Aspen, CO[39m
+            [33mDate: 12/30/18[39m
+            
+==========================================
+
+            
+            [32mArtist: Metallica[39m
+            [33mVenue: Fiserv Forum[39m
+            [33mLocation: Milwaukee, WI[39m
+            [33mDate: 10/16/18[39m
+            
+==========================================
+
+            
+            [32mArtist: Metallica[39m
+            [33mVenue: PPG Paints Arena[39m
+            [33mLocation: Pittsburgh, PA[39m
+            [33mDate: 10/18/18[39m
+            
+==========================================
+
+            
+            [32mArtist: Metallica[39m
+            [33mVenue: Bryce Jordan Center[39m
+            [33mLocation: University Park, PA[39m
+            [33mDate: 10/20/18[39m
+            
+==========================================
+
+            
+       [32mMovie Title: The Last Samurai[39m
+       [33mYear: 2003[39m
+       [33mRated: R[39m
+       [33mIMDB Rating: 7.7[39m
+       [33mRotten Tomato Rating: 66%[39m
+       [33mCountry: USA, New Zealand, Japan[39m
+       [33mLanguages: English, Japanese[39m
+       [33mPlot: An American military advisor embraces the Samurai culture he was hired to destroy after he is captured in battle.[39m
+       [33mActors: Ken Watanabe, Tom Cruise, William Atherton, Chad Lindberg[39m
+       
+            [33mArtist: Nicki Minaj[39m
+            [32mSong Title: barbie[39m
+            [33mAlbum: Queen[39m
+            [33mSpotify This Song: https://open.spotify.com/album/2acDkDTWdNFie1HjcFa4Ny[39m
+            
+            [33mArtist: Aqua[39m
+            [32mSong Title: aqua[39m
+            [33mAlbum: Aquarium[39m
+            [33mSpotify This Song: https://open.spotify.com/album/7uYn7ZSrXOVlmITyocZs9F[39m
+            
+            [33mArtist: Aqua[39m
+            [32mSong Title: barbie girl[39m
+            [33mAlbum: Aquarium[39m
+            [33mSpotify This Song: https://open.spotify.com/album/7uYn7ZSrXOVlmITyocZs9F[39m
+            
+            [33mArtist: Lady Aqua[39m
+            [32mSong Title: im a barbie girl[39m
+            [33mAlbum: Hello (I Want U Back With Ur Love)[39m
+            [33mSpotify This Song: https://open.spotify.com/album/1TrBc9fI1tjgqyzXYZr8vG[39m
+            
+            [33mArtist: Lil Dicky[39m
+            [32mSong Title: friday[39m
+            [33mAlbum: Freaky Friday (feat. Chris Brown)[39m
+            [33mSpotify This Song: https://open.spotify.com/album/1XbNDGybI1iPfeQNJEeUdn[39m
+            
+            [33mArtist: Gloria Gaynor[39m
+            [32mSong Title: i will survive[39m
+            [33mAlbum: 20th Century Masters: The Millennium Collection: Best Of Gloria Gaynor[39m
+            [33mSpotify This Song: https://open.spotify.com/album/2BU2SNYoIPtZvGEJckdIhx[39m
+            
+            [33mArtist: Britney Spears[39m
+            [32mSong Title: Baby One More Time[39m
+            [33mAlbum: ...Baby One More Time (Digital Deluxe Version)[39m
+            [33mSpotify This Song: https://open.spotify.com/album/3WNxdumkSMGMJRhEgK80qx[39m
+            
+            [33mArtist: Michael Jackson[39m
+            [32mSong Title: Thriller[39m
+            [33mAlbum: Thriller 25 Super Deluxe Edition[39m
+            [33mSpotify This Song: https://open.spotify.com/album/1C2h7mLntPSeVYciMRTF4a[39m
+            
