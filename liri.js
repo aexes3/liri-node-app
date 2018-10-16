@@ -1,7 +1,6 @@
 /*Global Variables
 ==============================================================*/
 //Packages and Modules
-//var twitter = require('twitter');
 require("dotenv").config();
 var keys = require('./keys');
 var fs = require('fs');
@@ -10,6 +9,8 @@ const chalk = require('chalk');
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 let moment = require('moment');
+var Twitter = require('twitter');
+var client = new Twitter(keys.twitterKeys)
 
 //Inputs
 let inputs = process.argv[2];
@@ -28,6 +29,14 @@ function liriMeThis() {
 
         case "spotify-this":
             spotifyMe();
+            break;
+        
+        case "my-tweets":
+            myTweets();
+            break;
+
+        case "do-what-it-says":
+            doThis();
             break;
 
     }
@@ -110,8 +119,8 @@ function spotifyMe() {
         }
         else {
             songInfo = (`
-            ${(chalk.green("Song Title: " + tuneQuery))}
             ${(chalk.yellow("Artist: " + data.tracks.items[0].album.artists[0].name))}
+            ${(chalk.green("Song Title: " + tuneQuery))}
             ${(chalk.yellow("Album: " + data.tracks.items[0].album.name))}
             ${(chalk.yellow("Spotify This Song: " + data.tracks.items[0].album.external_urls.spotify))}
             `);
@@ -120,5 +129,50 @@ function spotifyMe() {
         }
    }) 
 };
+
+///////////////////// T W I T T E R /////////////////
+function myTweets(){
+    var params = {screen_name: 'nodejs'}; //change nodejs to my screen name aexes3?
+        client.get('statuses/user_timeline', params, function(error, tweets, response) {
+  if (!error) {
+    console.log(tweets);
+
+    for (let i = 0; i < tweets.length; i++){
+        console.log(tweets[i].created_at);
+        console.log(' ');
+        console.log(tweets[i].text);
+    }
+  }
+});
+}
+
+//////////////////// D O  W H A T  I T  S A Y S //////////////////
+function doThis(){
+    fs.readFile("random.txt", "utf8", (err, data) => {
+        if(err){
+            console.log("Try again, something isn't right.");
+            return;
+        }
+        var textArr = data.split(",");
+        // console.log(textArr[0])
+        switch (textArr[0]) {
+            case "movie-this":
+            omdbAPI(textArr[1]);
+                break;
+            case "spotify-this":
+            spotifyMe(textArr[1]);
+                break;
+            case "concert-this":
+            bandsInTownAPI(textArr[1]);
+                break;
+            case "my-tweets":
+                myTweets();
+                break;
+        }
+        console.log(data);
+    })
+}
+
+
 
 liriMeThis();
