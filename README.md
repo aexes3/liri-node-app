@@ -28,7 +28,7 @@ Movie-this will return these reuslts:
 * Plot of the movie
 * Actors in the movie
 
-###Example:
+### Example:
 ![movie-this](https://user-images.githubusercontent.com/41274613/47029384-0b6b8a80-d131-11e8-8858-ec34b6e5ce4c.JPG)
 
 ------------------------------------------------
@@ -39,7 +39,7 @@ Concert-this will return these results:
 * Location:
 * Date of the concert:
 
-###Example:
+### Example:
 ![concert-this](https://user-images.githubusercontent.com/41274613/47029380-0b6b8a80-d131-11e8-94f5-88f1772280fb.JPG)
 
 ------------------------------------------------
@@ -62,7 +62,7 @@ Every time one of these options is run, LIRI will log the resulting data into a 
 
 ------------------------------------------------
 
-#Built With
+# Built With
 
 * Node.js
 * Bands In Town API
