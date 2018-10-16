@@ -50,7 +50,7 @@ Spotify-this will return these results:
 * Album:
 * A preview link of the song from Spotify
 
-###Example:
+### Example:
 ![spotify-this](https://user-images.githubusercontent.com/41274613/47029385-0b6b8a80-d131-11e8-84c9-b8cb623fb663.JPG)
 
 ------------------------------------------------
